@@ -39,7 +39,7 @@ const App = () => {
       {input
         .filter((val) => {
           if (data === "") {
-            return val;
+            return null;
           } else if (val.toLowerCase().includes(data.toLowerCase())) {
             return val;
           }
